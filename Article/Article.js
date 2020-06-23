@@ -186,6 +186,12 @@ const articleMaker = function(articleData) {
     paragraphOne.textContent = articleData.firstParagraph;
     paragraphTwo.textContent = articleData.secondParagraph;
     paragraphThree.textContent = articleData.thirdParagraph;
+    articleButton.textContent = 'button';
+
+
+    articleButton.addEventListener('click', (e) => {
+           articleContainer.classList.toggle('article-open')
+    })
 
     return articleContainer;
 }
